@@ -26,7 +26,7 @@ sudo fdisk /dev/sdb
 ~~~
 1. `o` ile yeni bir DOS tablosu oluşturulur.
 2. `n` ile yeni bir bölüm oluşturulur. Sırasıyla `p` , `1` seçilir. Başlangıç sektörünü değiştirmeyeceğimiz için `enter` ile kabul edilir. Bundan sonraki aşamada birinci bölümün boyutunu belirlemek için değer girilir, biz `+32M` girelim.  
-3. Birinci bölümün tipini W95 FAT16 (LBA) yapmak için sırasıyla `t` ve `e` seçilir.
+3. Birinci bölümün tipini W95 FAT16 (LBA) yapmak için sırasıyla `t` ve `c` seçilir.
 4. Birinci bölümün boot edilebilir flagini setlemek için `a` ve `1` seçilir.
 5. RootFS için gerekli olan ikinci bölüm için `n` ile yeni bir bölüm oluşturulur. Sırasıyla `p` , `2` seçilir. Başlangıç sektörünü değiştirmeyeceğimiz için `enter` ile kabul edilir. Bundan sonraki aşamada ikinci bölümün boyutunu belirlemek için değer girilir, biz `+256M` girelim.
 6. Son olarak yaptıklarımızı `p` ile kontrol edelim. Şöyle bir tablo görmemiz gereklidir.
